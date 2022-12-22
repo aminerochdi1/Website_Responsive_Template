@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>About us</title>
+        <style>
+        *{
+        margin:0;
+        padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        
+        }
+            body
+            {
+                background: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                
+            }
+            
+            .container
+            {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+            /*.container .card 
+            {
+                position: relative;
+                width: 50%;
+                left: 20%;
+                padding: 20px 20px 20px 40px;
+                
+            }*/
+            .container .card 
+            
+            {
+                position: relative;
+                width: 600px;
+                height: 350px;
+                margin: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background: linear-gradient(45deg,#804600,#ff9c24);
+                transition: 0.5s;
+                
+                
+            }
+            .container .card img
+            {
+                position: absolute;
+                bottom: 0;
+                left: 30%;
+                transform: translateX(-50%);
+                transform: translateY(3%);
+                height: 400px;
+                transition: 0.5s;
+                 -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 20%);
+                 filter: grayscale(80%);
+                
+            }
+            
+            
+            .container .card:hover img
+            {
+                
+                left: 40%;
+                height: 500px;
+                
+            }
+            .container .card .content
+            {
+                position: relative;
+                width: 50%;
+                left:50px;
+                padding: 20px 20px 20px 40px;
+                opacity: 0;
+               visibility: hidden;
+                transition: 0.5s;
+                
+            }
+            .container .card #elon
+            {
+                position: absolute;
+                left: 140px;
+            }
+            
+            .container .card:hover .content
+            {
+                left: 0;
+                transition: 0.5s;
+                opacity: 1;
+                visibility: visible;
+                
+            }
+            
+            .container .card .content h2
+            {
+                
+               text-transform: uppercase; 
+                font-size: 2.2em;
+                line-height: 1em;
+            }
+            
+            .container .card .elon
+            {
+                position: absolute;
+                right: 20px;
+            }
+            
+            .container .card .content a
+            {
+                position: relative;
+                color: whitesmoke;
+                background: black;
+                display: inline-block;
+                padding: 10px 20px ;
+                margin-top: 10px;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            @media (max-width : 400px)
+            {
+                .container .card
+                {
+                   width: auto; 
+                    max-width: 600px;
+                    align-items: flex-start;
+                    
+                }
+                .container .card:hover
+                {
+                    height: 600px;
+                    
+                }
+                .container .card:hover img
+                {
+                    left:50%;
+                    height: 200px;
+                }
+                .container .card .content
+                {
+                    width: 100%;
+                    left:0;
+                    padding: 40px;
+                }
+                
+                
+                
+            }
+            
+            
+            @media (max-width : 767px)
+            {
+                .container 
+                {
+                   flex-direction: column; 
+                    
+                }
+                .container .card
+                {
+                   
+                    margin: 40px 20px;
+                    
+                }
+                
+               
+                
+            }
+            
+            @media (max-width : 420px)
+            {
+             
+               .container .card .content {padding:20px;
+                }
+                .container .card:hover .content 
+                {
+                    height: 100px;
+                }
+                
+                
+               
+                
+                
+                
+            }
+            
+            .btn
+            {
+                position: relative;
+                display: inline-flex;
+                padding: 10px 30px;
+                background: #363636;
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 1px;
+                right: 700px;
+                top: 320px;
+                overflow: hidden;
+            }
+            
+            .btn span
+            {
+                position: relative;
+                z-index: 1;
+            }
+            
+            .btn::before{
+                content: '';
+                position: absolute;
+                top:var(--y);
+                left: var(--x);
+                transform: translate(-50%,-50%);
+                width: 0px;
+                height: 0px;
+                border-radius: 50%;
+                background: #2196f3;
+                transition: width 0.5s,height 0.5s;
+                
+ 
+            
+            }
+            .btn:hover:before
+            {
+                width: 300px;
+                height: 300px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>Zoughagh Mohamed</h2>
+                    <p>
+                        Etudiant 21 ans, Développeur, designer, créateur de logiciel, co-assistant du site et du design,  couleurs de l'interface utilisateur, créateur de contenu, créateur d'idées.
+                    </p>
+                    <a href="https://www.instagram.com/mohamedzgh/" >Lire la suite </a>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                 <img src="img/zgh.png" id="elon">
+            </div>
+            
+            <div class="card">
+                <div class="content">
+                    <h2>Amine Rochdi</h2>
+                    <p>
+                        Etudiant 19 ans Développeur à l'OFPPT, développeur web, habite au Maroc Oujda, l'administrateur du site web, le designer, et le créateur de contenu .
+                    </p>
+                    <a href="https://www.linkedin.com/in/mohammed-amine-rochdi-314b7b13a/">Lire la suite </a>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                 <img src="img/myface.png">
+            </div>
+            
+        </div>
+        
+        
+        <a href="index.html" class="btn"><span>Accueil</span></a>
+           <script>
+        const btn=document.querySelector('.btn');
+               
+            btn.onmousemove = function(e)
+            {
+                const x =e.pageX - btn.offsetLeft;
+                const y =e.pageY - btn.offsetTop;
+                btn.style.setProperty('--x',x + 'px');
+                btn.style.setProperty('--y',y + 'px');
+                
+                
+            }
+               
+        
+        </script>
+            
+        
+        
+    </body>
+    
+ 
+    
+</html>

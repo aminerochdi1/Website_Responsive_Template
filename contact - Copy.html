@@ -1,0 +1,401 @@
+<html>
+    <head>
+        <title>Contact us</title>
+        <meta charset="utf-8">
+        
+       
+       
+       <script src="js/contactjs.js"></script>
+        
+        <style>
+        
+            /*body{
+                background-color: black;
+            } */   
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins' , sans-serif;
+                
+            }
+            
+            body{
+                background-color: #c9e0f2;
+                overflow-x: hidden;
+            }
+            section
+            {
+              display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100wh;
+                padding: 50px;
+                width: 100%;
+                background: #c9e0f2;
+                   position: absolute;
+                top: 200px;
+                           }
+            section::before
+            {
+                content: '';
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                background: linear-gradient(#ffeb3b,#e91e63);
+                border-radius: 50%;
+                transform: translate(-400px,-120px);
+                
+            }
+            
+            section::after
+            {
+                content: '';
+                position: absolute;
+                width: 350px;
+                height: 350px;
+                background: linear-gradient(#2196f3,#838383);
+                border-radius: 50%;
+                transform: translate(400px,120px);
+                
+            }
+            .container
+            {
+                position: relative;
+                z-index: 1000;
+                width: 100%;
+                max-width: 1000px;
+                padding: 180px;
+                background: rgba(255,255,255,0.1);
+                box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+                border: 1px solid rgba(255,255,255,0.25) ;
+                border-right: 1px solid rgba(255,255,255,0.1) ;
+                border-bottom: 1px solid rgba(255,255,255,0.1) ;
+                border-radius: 10px;
+                overflow: hidden;
+                backdrop-filter: blur(10px);
+                
+            }
+            .container::before{
+                
+                content: '';
+                position: absolute;
+                top:0;
+                left: -40%;
+                width: 100%;
+                height: 100%;
+                background: rgba(255,255,255,0.1);
+                pointer-events: 
+                rgba(255,255,255,0.05);
+                pointer-events: none;
+                transform: skewX(-15deg);
+                
+                
+            }
+            
+            .container h2
+            {
+               width: 100%;
+                text-align: center;
+                color: #fff;
+                font-size: 36px;
+                margin-bottom: 20px;
+                
+            }
+        
+            .container .row100
+            {
+                position: :relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                grid-auto-columns: repeat(aut);
+                
+                
+            }
+            
+            .container .row100 .col
+            {
+              position: relative;
+                width: 100%;
+                padding: 0 10px;
+                margin: 30px 0 20px;
+                
+                
+            }
+            
+                        .container .row100 .col .inputBox
+            {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                color: #fff;
+                
+                
+            }
+            .container .row100 .col input,
+            .container .row100 .col textarea
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                font-size: 15px;
+                padding: 0 10px;
+                z-index: 1;
+                color: #000;
+                
+                
+            }
+            
+            .container .row100 .col input .text{
+                
+                position: absolute;
+                top:0;
+                left:0;
+                line-height: 40px;
+                font-size: 18px;
+                padding: 0 10px;
+                display: block;
+                transition: 0.5s;
+                pointer-events: none;
+                
+                
+            }
+            
+            .container .row100 .col .inputBox input:focus ,
+            .container .row100 .col .inputBox textarea:valid 
+            {
+                
+                top:10px;
+                left: -10px;
+            }
+            
+            .container .row100 .col .inputBox .line
+            {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 2%;
+                background: #fff;
+                transition: 0.5s;
+                border-radius: 2px;
+                pointer-events: none;
+                
+                
+            }
+              /*.container .row100 .col .inputBox input:focus ～ .line ,
+            .container .row100 .col .inputBox textarea:valid ～ .line
+            {
+                 height: 100%;
+
+            }*/
+            
+            .container .row100 .col button
+            {
+                position: relative;
+                bottom: -50px;
+                color: whitesmoke;
+                border: none;
+                padding: 10px 10px;
+                cursor: pointer;
+                outline: none;
+                background: #fff;
+                color: #000;
+                font-weight: 600;
+                font-size: 18px;
+                border-radius: 2px;
+                
+            }
+            
+            
+            
+            .container .row100 .col .inputBox textarea
+            {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                padding: 10px 0;
+                
+                
+                
+                    
+            }
+            
+            .container .row100 .col .inputBox textarea:focus ,
+            .container .row100 .col .inputBox textarea:valid 
+            {
+                
+                top:10px;
+                left: -10px;
+            }
+            .home
+            {
+                position: absolute;
+                left: 45%;
+                top: 120PX;
+                padding: 10px;
+                overflow-x: hidden;
+                border: none;
+                font-size: 20px;
+                background-color: transparent;
+                display: inline-block;
+                text-decoration: none;
+                background: linear-gradient(#acdfe6,#e6acbc);
+                font-family: sans-serif;text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 2px;
+                overflow: hidden;
+                transition: 0.5s; 
+                z-index: 1;
+                text-decoration: none;
+            }
+            .home:hover
+            {
+                 transform: scale(1.1);
+                z-index: 1000;
+                background: #ff3f81;
+                opacity: 1;
+            }
+            .home::before
+            {
+                content:attr(data-text);
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #fff;
+                font-size: 6em;
+                font-weight: 700;
+                pointer-events: none;
+                opacity: 0;
+                letter-spacing: :20px;
+                transition: 0.5%;
+                white-space: nowrap;
+            }
+           .home:hover:before
+
+            {
+                opacity: 0.09;
+                letter-spacing: 20px;
+            }
+            
+            
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+       <button class="home" value="accueil" data-text="accueil">
+           
+           <a href="index.html">accueil</a>
+       </button>
+       
+        <section>
+           <div class="container">
+            <div >
+                <h2>Nous contacter</h2>
+                
+                <div class="row100">
+                 <div class="col">
+                     <div class="inputBox">
+                         <input type="text" id="prenom" name="" required="obligatoire">
+                         <span class="text">Prénom</span>
+                         <span class="line"></span>
+                         
+                         
+                     </div>
+                 </div>   
+                    
+                </div>
+                
+            </div>
+            <div class="row100">
+                 <div class="col">
+                     <div class="inputBox">
+                         <input type="text" id="nom" name="" required="obligatoire">
+                         <span class="text">Nom</span>
+                         <span class="line"></span>
+                         
+                         
+                     </div>
+                 </div>   
+                    <div class="row100">
+                 <div class="col">
+                     <div class="inputBox">
+                         <input type="text" id="email" name="" required="obligatoire">
+                         <span class="text">Email</span>
+                         <span class="line"></span>
+                         
+                         
+                     </div>
+                 </div>   
+                    
+                </div>
+                
+            </div>
+            <div class="row100">
+                 <div class="col">
+                     <div class="inputBox">
+                         <input type="text" id="mobile" name="" required="obligatoire">
+                         <span class="text">Mobile</span>
+                         <span class="line"></span>
+                         
+                         
+                     </div>
+                 </div>   
+                    
+                
+            </div>
+            
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox textarea">
+                        <textarea required="obligatoire" placeholder="Commentaire">
+                           </textarea>
+                            <span class="text">Tapez votre message ici ...</span>
+                         <span class="line"></span>
+                        
+                    </div>
+                </div>
+            </div>
+           
+                    <div class="row100">
+                <div class="col">
+                  <button type="submit">Envoyer</button> 
+                  
+                </div>
+            </div>
+                     
+                      
+                       
+                        </div>
+
+        </section>
+        
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</html>

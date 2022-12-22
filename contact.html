@@ -1,0 +1,333 @@
+<!doctype>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <script src="js/contactjs.js">
+        </script>
+        
+        <style>
+        
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins',sans-serif;
+            }
+            
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: black;
+                
+                
+            }
+        
+            
+            .container
+            {
+                
+                width: 80%;
+                padding: 20px;
+            }
+            
+            
+            .container h2
+            {
+               width: 100%;
+                color:#45f3ff; 
+                font-size: 36px;
+                text-align: center;
+                margin-bottom: 10px;
+                
+                
+                            }
+            .container .row100
+            {
+              position: relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                
+                
+                
+            }
+                        .container .row100 .col
+
+            {
+                
+                
+                position: relative;
+                width: 100%;
+                padding: 0 10px;
+                margin: 30px 0 10px;
+                transition: 0.5s;
+            }
+            
+                        .container .row100 .inputBox
+            {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                color: #45f3ff;
+            }
+             
+            .container .row100 .inputBox input,
+            .container .row100 .inputBox.textarea textarea
+            {
+            
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                padding: 0 20px;
+                z-index: 1;
+                color: #000;
+                bottom: -3px;
+                
+                
+                
+            }
+            
+             .container .row100 .inputBox .text
+            {
+               position: absolute;
+                   top:0;
+                left:0;
+                line-height: 18px;
+                padding: 0 10px;
+                display: block;
+                transition: 0.5s;
+                pointer-events: none;
+                
+                
+            }
+            
+            .container .row100 .inputBox input:focus + .text,
+            .container .row100 .inputBox input:valid + .text
+            {
+                top:-35px;
+                left:-10px;
+                
+                
+            }
+            
+            
+            .container .row100 .inputBox .line
+            {
+             position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                height: 2px;
+                background: #45f3ff;
+                transition:0.5s;
+                border-radius: 2px;
+                pointer-events: none;
+                
+                
+                
+                
+                
+            }
+            
+             .container .row100 .inputBox input:focus ~ .line,
+            .container .row100 .inputBox input:valid ~ .line
+            {
+                
+                height: 100%;
+                
+            }
+            
+            .container .row100 .inputBox.textarea
+            {
+                
+                position: relative;
+                width:100%;
+                height: 100%;
+                padding: 60px 0;
+                
+                
+            }
+            
+            .container .row100 .inputBox.textarea textarea
+            {
+                height: 100%;
+                resize: none;
+                
+            }
+            
+            .container .row100 .inputBox textarea:focus + .text,
+            .container .row100 .inputBox textarea:valid + .text
+            {
+                 top:-35px;
+                left:-10px;
+            }
+            
+             .container .row100 .inputBox textarea:focus ~ .line,
+            .container .row100 .inputBox textarea:valid ~ .line
+            {
+                height: 100%;
+                
+            }
+            input[type="submit"]
+            {
+                border: none;
+                padding: 7px 35px;
+                cursor: pointer;
+                outline: none;
+                background: #45f3ff;
+                color: #000;
+                font-size: 18px;
+                border-radius: 2px;
+                
+                
+            }
+            
+            .container .row100 a
+            {
+                height: 100%;
+                position: relative;
+                border: none;
+                padding: 7px 40px;
+                cursor: pointer;
+                outline: none;
+                background: #45f3ff;
+                color: #000;
+                font-size: 18px;
+                border-radius: 2px;
+                left: 150px;
+                bottom: 68px;
+                text-decoration: none;
+                font-size: 18px;
+                
+              }
+            .container .row100 a
+            {
+                color: black;
+                text-decoration: none;
+            }
+            .container .row100 a:hover
+            {
+                 
+                background: #ff3f81;
+                opacity: 1;
+            }
+            
+            input[type="submit"]:hover
+            {
+                background: #ff3f81;
+                opacity: 1;
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+        <div class="container">
+            <h2>Nous contacter</h2>
+            
+            <div class="row100">
+            <div class="col">
+            <div class="inputBox">
+            <input type="text" name="" required="">
+            <span class="text">Prenom</span>
+            <span class="line"></span>
+             </div>
+           </div>
+           </div>
+           
+           <div class="row100">
+            <div class="col">
+            <div class="inputBox">
+            <input type="text" name="" required="">
+            <span class="text">Nom</span>
+            <span class="line"></span>
+             </div>
+           </div>
+           </div>
+           
+           <div class="row100">
+            <div class="col">
+            <div class="inputBox">
+            <input type="text" name="" required="">
+            <span class="text">Mobile</span>
+            <span class="line"></span>
+             </div>
+           </div>
+            </div>
+             
+                <div class="row100">
+            <div class="col">
+            <div class="inputBox">
+            <input type="text" name="" required="">
+            <span class="text">Email</span>
+            <span class="line"></span>
+             </div>
+           </div>
+            </div>
+              
+              
+                 <div class="row100">
+            <div class="col">
+            <div class="inputBox textarea">
+            
+            <textarea required="obligatoire"></textarea>
+            
+            <span class="text">tapez votre message ici ...</span>
+            <span class="line"></span>
+             </div>
+           </div>
+            </div>
+              
+              <div class="row100">
+            <div class="col">
+              <div>
+                  <input type="submit" value="Envoyer" onclick="alert('envoyé avec succès');  ">
+              </div>
+              
+          </div>
+        
+        </div>
+        
+        <div class="row100">
+            <div class="col">
+              <div>
+                 <a href="index.html">Accueil</a>
+              </div>
+              
+          </div>
+        
+        </div>
+        
+        </div>
+        
+        
+        
+        <script src="js/sweetalert.min.js"></script>
+        
+        
+    </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</html>
