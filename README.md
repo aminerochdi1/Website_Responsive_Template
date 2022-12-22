@@ -3,7 +3,7 @@ Responsive Web Design template - This modern Webflow template is the perfect sim
 
 ## Pages Overview :
 - Home
-- - Contact
+- Contact us
 - Info
 - About us
 
