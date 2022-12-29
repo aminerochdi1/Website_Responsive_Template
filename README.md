@@ -9,7 +9,7 @@ Responsive Web Design template - This modern Webflow template is the perfect sim
 
 ## Some screenshots
 
-### Home : 
+### HomePage
 
 ![screencapture-file-C-Users-Dell-Documents-dev-indeed-index-html-2022-12-29-13_47_14](https://user-images.githubusercontent.com/84997432/209953241-a5b69847-59fc-4431-afae-64409a107ecc.png)
 
